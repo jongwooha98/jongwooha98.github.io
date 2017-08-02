@@ -1,63 +1,66 @@
-<!doctype html>
-<html lang="en-US">
-
-<head>
-  <!--Bootstrap-->
-  <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <!--FontAwesome-->
-  <script src="https://use.fontawesome.com/5109a56cce.js"></script>
-  <!--lnik to main stylesheet-->
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Website of JongWoo HA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-<div data-spy="scroll" data-target=".navbar" data-offset="50">
-  <!--navbar-->
-  <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">JongWoo HA</a>
+    <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <!--link--> 
 
-    <div class="collapse navbar-collapse" id="navbarItems">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portofolio">Portofolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
- 
-    <!--home / header-->
-    <header id="home" class="container-fluid">
-      <div class="container-fluid text-center">
-        <h1>Building in Progress</h1>
+    <link type="text/css" href="main.css" rel="stylesheet" />
+    
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://use.fontawesome.com/5109a56cce.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-toggleable-md">
+      <a class="navbar-brand" href="#">JongWoo HA</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio-section">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
+    <!--home-->
+    <div id="home-section">
+      <h1 class="sentence">
+        <span>Hi,</span><br>
+        <span>My name is JongWoo Ha</span><br>
+        <span>and I'm </span>
+        <span class="keyword">adaptable</span>
+      </h1>
+    </div>
     <!--about-->
-    <div id="about" class="container-fluid">
+    <div id="about-section" class="container-fluid scrollspy">
       <div class="row">
         <div class="col text-center">
-          <h2>JONGWOO HA</h2>
+          <img class="profilePicture" src="profilePicture2.jpg" alt="profile picture">
         </div>
         <div class="col whoAmI">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut commodo massa. Suspendisse tristique, tortor aliquet auctor congue, felis leo cursus ligula, at luctus odio lectus elementum risus. Suspendisse finibus urna nibh, et tempor orci interdum et. Donec condimentum posuere fringilla. Phasellus non ante mauris. Integer commodo tristique est eget viverra. In consequat lacus sit amet vehicula semper.</p>
-          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed tincidunt feugiat quam, at lobortis magna facilisis a. Curabitur euismod augue in lectus euismod gravida. Mauris eu tempus justo. Nulla quis orci vel nulla vulputate varius. In nec magna metus. Proin volutpat orci velit, in placerat nisi lacinia quis. Donec leo libero, vulputate luctus posuere nec, venenatis nec diam. Etiam iaculis porttitor ligula id vulputate. Duis commodo aliquet sem, at euismod arcu aliquam eu.</p>
+          <p>I am currently studying electrical engineering at Penn State UP.</p>
         </div>
       </div>
     </div>
     <!--portofolio-->
-    <div id="portofolio" class="container scrollspy">
+    <div id="portofolio-section" class="container scrollspy">
       <div class="row">
         <div class="col-sm-12">
           <h2>Portofolio</h2>
@@ -98,15 +101,13 @@
             </div>
           </div>
         </div>
-      
       </div>
-    
     </div>
     <!--contact-->
-    <div id="contact" class="container-fluid scrollspy">
-      
+    <div id="contact-section" class="container-fluid scrollspy">
     </div>
-    <div id="social-media" class="container-fluid">
+    <!--social-media-->
+    <div id="social-media-section" class="container-fluid">
       <ul>
         <li>
           <a href="https://www.facebook.com/profile.php?id=100004094376710"><i class="fa fa-facebook"></i></a>
@@ -128,11 +129,9 @@
         </li>
       </ul>
     </div>
-    
-    <!--footer-->
-    <footer class="container-fluid">
-      <p class="text-center">Designed &amp; Coded by myself</p>
-    </footer>
+    <!--copyright-->
+    <div class="container-fluid">
+      <p class="text-center">Designed &amp; Coded by JongWoo HA</p>
+    </div>
   </body>
-</div>
 </html>
