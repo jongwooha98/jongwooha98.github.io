@@ -29,10 +29,8 @@ nav {
 /*-----home-----*/
 #home-section {
   width: 80%;
-  position: relative;
   margin: auto;
-  /*background-size: cover;*/
-  padding: 10% 0 15% 0;
+  padding: 15% 0 15% 0; 
 }
 #home-section .sentence {
   font-family: 'Jura', sans-serif;
