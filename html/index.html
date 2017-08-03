@@ -12,43 +12,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link type="text/css" href="main.css" rel="stylesheet" />
+    <link type="text/css" href="../css/main.css" rel="stylesheet" />
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
     <!--FontAwesome-->
     <script src="https://use.fontawesome.com/5109a56cce.js"></script>
     <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--navbar-->
     <nav class="navbar fixed-top navbar-toggleable-md">
-      <a class="navbar-brand" href="#">JongWoo HA</a>
+      <a class="navbar-brand" href="home.html">JongWoo HA</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#portofolio-section">Portofolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <!--home-->
-    <div id="home-section" class="container-fluid">
-      <h1 class="sentence">
-        <span>Hi,</span><br>
-        <span>My name is JongWoo Ha</span><br>
-        <span>and I'm </span>
-        <span class="keyword">adaptable</span>
-      </h1>
-    </div>
+    
     <!--about-->
     <div id="about-section" class="container-fluid scrollspy">
       <div class="row">
         <div class="col text-center">
-          <img class="profilePicture" src="profilePicture2.jpg" alt="profile picture">
+          <img class="profilePicture" src="../picture/profilePicture2.jpg" alt="profile picture">
         </div>
-        <div class="col whoAmI">
+        <div class="col about">
           <p>I am currently studying electrical engineering at Penn State UP.</p>
         </div>
       </div>
@@ -127,5 +118,10 @@
     <div class="container-fluid">
       <p class="text-center">Designed &amp; Coded by JongWoo HA</p>
     </div>
+
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </body>
 </html>

@@ -12,7 +12,7 @@ body {
 }
 p {
   text-indent: 5%;
-  font-size: 12px;
+  font-size: 14px;
 }
 #about-section, #portofolio-section, #contact-section, #social-media-section {
   padding-top: 5%;
@@ -24,25 +24,10 @@ nav {
   display: block;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
+  font-family: 'Jura', sans-serif;
+  font-size: 20px;
 }
 
-/*-----home-----*/
-#home-section {
-  width: 80%;
-  margin: auto;
-  padding: 15% 0 15% 0; 
-}
-#home-section .sentence {
-  font-family: 'Jura', sans-serif;
-  font-size: 50px;
-  color: #262626;
-  text-align: left;
-  line-height: 150%;
-}
-#home-section .keyword {
-  display: inline;
-  text-indent: 5%;
-}
 
 /*-----about-----*/
 #about-section {
@@ -58,8 +43,8 @@ nav {
   width: 350px;
   height: 350px;
 }
-.whoAmI {
-  font-size: 3em;
+#about-section .about {
+  font-size: 250px;
   text-align: left;
   line-height: 1em;
 }

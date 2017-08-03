@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Jura');
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #f5f5f5;
+  padding-top: 75px;
+  margin: auto;
+}
+p {
+  text-indent: 5%;
+  font-size: 14px;
+}
+/*-----home-----*/
+#home-section {
+  width: 80%;
+  margin: auto;
+  padding: 15% 0 15% 0; 
+}
+#home-section .sentence {
+  font-family: 'Jura', sans-serif;
+  font-size: 50px;
+  color: #262626;
+  text-align: left;
+  line-height: 150%;
+}
+#home-section .keyword {
+  display: inline;
+  text-indent: 5%;
+}
