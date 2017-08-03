@@ -1,18 +1,16 @@
-/*-----navbar-brand scrolls page back to top-----*/
-function dd_scrolltotop(duration){
-     duration = duration || 1500
-     var rootel = (document.compatMode =="BackCompat")? document.body : document.documentElement
-     if (rootel.scrollTop == 0) // in some browsers such as Chrome, use document.body instead of document.documentElement
-          rootel = document.body
-     var curscrolltop = rootel.scrollTop, scrolltimer, elapsedtime, starttime = new Date().getTime(), animatedegree = 0
-     var totaldis = curscrolltop
-     clearTimeout(scrolltimer)
-     function jumptop(){
-          elapsedtime = new Date().getTime() - starttime
-          if (elapsedtime < duration){
-               rootel.scrollTop = totaldis - (totaldis * (1-Math.cos((elapsedtime/duration)*Math.PI)) / 2)
-               scrolltimer = setTimeout(function(){jumptop()}, 10)
-          }
-     }
-     jumptop()
-}
+/*-----home-section: change of keyword & color-----*/
+var keywords = ["practical", "adaptable", "considerate", "rational", "ambitious", "impartial", "unassuming", "generous", "wondering why you're still staring at this."];
+var count = 1;
+setInterval(function(){    
+    $("span.keyword").fadeOut(300, function(){        
+        $(this).html(keywords[count]);        
+        count++;        
+        if(count == keywords.length)            
+            count = 0;
+    var hue = 'rgb('
+        + (Math.floor(Math.random() * 256)) + ','
+        + (Math.floor(Math.random() * 256)) + ','
+        + (Math.floor(Math.random() * 256)) + ')';      
+        $(this).fadeIn(300).css('color', hue);    
+    });
+}, 2500);

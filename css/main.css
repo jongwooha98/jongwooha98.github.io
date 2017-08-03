@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Jura');
-
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,121 +13,20 @@ p {
   text-indent: 5%;
   font-size: 14px;
 }
-#about-section, #portofolio-section, #contact-section, #social-media-section {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-/*-----navbar-----*/
-nav {
-  display: block;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-  font-family: 'Jura', sans-serif;
-  font-size: 20px;
-}
-
-
-/*-----about-----*/
-#about-section {
-  background: whitesmoke;
+/*-----home-----*/
+#home-section {
   width: 80%;
   margin: auto;
-  text-align: center;
+  padding: 15% 0 15% 0; 
 }
-.profilePicture {
-  background-repeat: no-repeat;
-  background-position: 50%;
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
-}
-#about-section .about {
-  font-size: 250px;
-  text-align: left;
-  line-height: 1em;
-}
-
-/*-----portofolio-----*/
-h2 {
+#home-section .sentence {
   font-family: 'Jura', sans-serif;
-  line-height: 150%;
   font-size: 50px;
-  font-weight: normal;
   color: #262626;
+  text-align: left;
+  line-height: 150%;
 }
-
-/*-----social-media-----*/
-#social-media-section {
-  margin: 50px;
-  padding: 50px;
-  background: #262626;
-  text-align: center;
-}
-#social-media-section ul {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#social-media-section ul li {
-  list-style: none;
-}
-#social-media-section ul li a {
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-#social-media-section ul li a .fa {
-  position: relative;
-  color: #262626;
-  transition: .5s;
-  z-index: 3;
-}
-#social-media-section ul li a:hover .fa {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-#social-media-section ul li a:before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: .7s;
-  z-index: 2;
-}
-#social-media-section ul li a:hover:before {
-  top: 0;
-}
-#social-media-section ul li:nth-child(1) a:before {
-  background: #3b5998;
-}
-#social-media-section ul li:nth-child(2) a:before {
-  background: #c13584;
-}
-#social-media-section ul li:nth-child(3) a:before {
-  background: #007bb5;
-}
-#social-media-section ul li:nth-child(4) a:before {
-  background: #006400;
-}
-#social-media-section ul li:nth-child(5) a:before {
-  background: #0ebeff;
-}
-#social-media-section ul li:nth-child(6) a:before {
-  background: #000000;
+#home-section .keyword {
+  display: inline;
+  text-indent: 5%;
 }
