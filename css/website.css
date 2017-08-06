@@ -13,16 +13,26 @@ body {
   padding-top: 75px;
 }
 p {
-  text-indent: 5%;
   font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+
 }
-h1, h2, h3{
+h1 {
   font-family: 'Jura', sans-serif;
   line-height: 150%;
   font-size: 50px;
   font-weight: normal;
   text-indent: 10px;
   color: #1D3557;
+}
+h2 {
+  font-family: 'Jura', sans-serif;
+  line-height: 150%;
+  font-size: 30px;
+  font-weight: normal;
+  text-indent: 30px;
+  color: #1D3557;
+  padding: 20px 0 0 50px;
 }
 
 .section {
@@ -33,13 +43,40 @@ h1, h2, h3{
 }
 
 /*-----navbar-----*/
-#navigation a ul, .navbar-brand, .navbar-nav a{
-  display: block;
-  background-color: #457B9D;
-  font-family: 'Jura', sans-serif;
-  font-size: 20px;
-  color: #F1FAEE; 
+#navigation a {
+    position: absolute;
+    left: -115px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    font-size: 22px;
+    color: #F1FAEE;
+    border-radius: 0 5px 5px 0;
+    text-align: left;
 }
+#navigation a:hover {
+    left: 0;
+} 
+#intro-nav {
+    top: 20px;
+    background-color: #F1FAEE;
+    color: #1D3557 !important;
+}
+#about-nav {
+    top: 80px;
+    background-color: #457B9D;
+}
+#portofolio-nav {
+    top: 140px;
+    background-color: #1D3557;
+}
+#contact-nav {
+    top: 200px;
+    background-color: #E63946;
+}
+
 /*-----intro-----*/
 #intro-section {
   text-align: center;
@@ -58,9 +95,20 @@ h1, h2, h3{
 }
 
 /*-----about-----*/
-.psu-coe-logo {
-  display: block;
-  margin: auto;
+#about-section .row {
+  margin-left: 5%;
+}
+
+}
+.psu-coe-logo, .chfp-logo {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+.education .name,
+.volunteer .name {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
 }
 
 /*-----portofolio-----*/
@@ -77,6 +125,7 @@ h1, h2, h3{
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 100%;
   transform: translate(-50%, -50%);
 }
 #social-media-section ul li {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Personal Website of JongWoo HA</title>
+    <title>JongWoo's website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -22,14 +22,13 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--navbar-->
-    <nav id="navigation" class="navbar fixed-top navbar-toggleable-md">
-      <a class="navbar-brand" href="index.html">JongWoo HA</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#intro-section">Intro</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portofolio-section">Portofolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+    <nav id="navigation" class="fixed-top">
+      <div>
+        <ul style="list-style: none">
+          <li><a id="intro-nav" href="#intro-section">Intro</a></li>
+          <li><a id="about-nav" href="#about-section">About</a></li>
+          <li><a id="portofolio-nav" href="#portofolio-section">Portofolio</a></li>
+          <li><a id="contact-nav" href="#contact-section">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -37,8 +36,8 @@
       <!--intro-->
       <section id="intro-section" class="section">
         <div class="row">
-          <div class="col text-center">
-            <img class="profilePicture" src="picture/profilePicture2.jpg" alt="profile picture">
+          <div class="col">
+            <img class="profilePicture" src="image/profilePicture2.jpg" alt="profile picture">
           </div>
           <div class="col intro">
             <p>I am currently studying electrical engineering at Penn State UP.</p>
@@ -48,16 +47,41 @@
       <!--about-->
       <section id="about-section" class="section">
         <h1>About</h1>
-        <div class="school">
-          <img class="psu-coe-logo" src="picture/psu-coe-logo.png" alt="Penn State COE logo">
-          <p class="text-center">Penn State University College of Engineering: Electrical Engineering</p>
+        <div class="education">
+          <h2>Education</h2>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <img class="psu-coe-logo" src="image/psu-coe-logo.png" alt="PSU COE logo">
+            </div>
+            <div class="col-md-8 col-sm-8 v-line">
+              <p class="name">The Pennsylvania State University -UP</p>
+              <p>Bachelor of Science: Electrical Engineering</p>
+              <p>Penn State University College of Engineering: Electrical Engineering</p>
+            </div>
+          </div>
+        </div>
+        <div class="work">  
+          <h2>Work</h2>
+        </div>
+        <div class="volunteer">
+          <h2>Volunteer</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="chfp-logo" src="image/chfp-logo.jpg" alt="CHFP logo">
+            </div>
+            <div class="col-md-8">
+              <p class="name">Catholic Harvest Food Pantry</p>
+              <li>Volunteered sixteen(16) hours each year</li>
+              <li>Served community of people in need like local families of low income and homless people</li>
+            </div>
+          </div>
         </div>
       </section>
       <!--portofolio-->
       <section id="portofolio-section" class="section">
         <div class="row">
           <div class="col-sm-12">
-            <h2>Portofolio</h2>
+            <h1>Portofolio</h1>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
@@ -99,7 +123,7 @@
       </section>
       <!--contact-->
       <section id="contact-section" class="section">
-        <h3>Contact</h3>
+        <h1>Contact</h1>
         <form action="mailto:jongwooha98@gmail.com" method="post" enctype="text/plain">
           Email: <br>
           <input type="email" name="email"><br>
@@ -107,8 +131,8 @@
           <input type="text" name="firstname"><br>
           Last name: <br>
           <input type="text" name="lastname"><br>
-          Content: <br>
-          <input type="text" name="comment" size="50"><br><br>
+          Message: <br>
+          <input type="text" name="message" size="50"><br><br>
           <input type="submit" value="Submit">
           <input type="reset" value="Reset">
         </form>
